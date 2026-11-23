@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{desc}}">
+<meta property="og:title" content="{{og_title}}">
+<meta property="og:description" content="{{og_desc}}">
+<meta property="og:image" content="https://antikyan.com/img/gallery-interior.jpg">
+<meta property="og:url" content="{{url}}">
+<meta property="og:type" content="website">
+<link rel="canonical" href="{{url}}">
+{{hreflang}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&family=Noto+Sans+Armenian:wght@400;500;600&family=Noto+Serif+Armenian:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{root}}style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" aria-label="{{home_aria}}"><img src="{{root}}img/logo.jpg" alt="Antikyan Gallery" width="740" height="260"></a>
+    <nav aria-label="{{nav_aria}}">
+      <a href="#about">{{nav_about}}</a>
+      <a href="#works">{{nav_works}}</a>
+      <a href="#artists">{{nav_artists}}</a>
+      <a href="#abroad">{{nav_abroad}}</a>
+      <a href="#visit">{{nav_visit}}</a>
+    </nav>
+    <ul class="langs" aria-label="{{lang_aria}}">
+{{langs}}
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">{{hero_eyebrow}}</p>
+      <h1>{{hero_h1}}</h1>
+      <p class="lead">{{hero_lead}}</p>
+      <div class="btns">
+        <a class="btn solid" href="#visit">{{btn_visit}}</a>
+        <a class="btn" href="#works">{{btn_works}}</a>
+      </div>
+    </div>
+    <div class="hero-img"><img src="{{root}}img/gallery-interior.jpg" alt="{{hero_alt}}"></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <p class="eyebrow">{{about_eyebrow}}</p>
+        <h2>{{about_h2}}</h2>
+      </div>
+      <div>
+        <p class="big">{{about_big}}</p>
+        <p>{{about_p1}}</p>
+        <p>{{about_p2}}</p>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>2012</b><span>{{stat1}}</span></div>
+      <div class="stat"><b>20+</b><span>{{stat2}}</span></div>
+      <div class="stat"><b>33</b><span>{{stat3}}</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="founder">
+  <div class="wrap">
+    <p class="eyebrow">{{founder_eyebrow}}</p>
+    <blockquote>{{founder_quote}}</blockquote>
+    <p class="who"><b>{{founder_name}}</b> · {{founder_role}}</p>
+  </div>
+</section>
+
+<section id="works">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="eyebrow">{{works_eyebrow}}</p>
+        <h2>{{works_h2}}</h2>
+      </div>
+      <p>{{works_p}}</p>
+    </div>
+    <div class="works" id="grid">
+      <button><img src="{{root}}img/work-01.jpg" alt="{{w01}}" loading="lazy"></button>
+      <button><img src="{{root}}img/work-09.jpg" alt="{{w09}}" loading="lazy"></button>
+      <button><img src="{{root}}img/work-02.jpg" alt="{{w02}}" loading="lazy"></button>
+      <p class="cap">{{cap_bruni}}</p>
+      <button><img src="{{root}}img/work-11.jpg" alt="{{w11}}" loading="lazy"></button>
+      <button><img src="{{root}}img/work-04.jpg" alt="{{w04}}" loading="lazy"></button>
+      <button><img src="{{root}}img/work-03.jpg" alt="{{w03}}" loading="lazy"></button>
+      <button><img src="{{root}}img/work-10.jpg" alt="{{w10}}" loading="lazy"></button>
+      <button><img src="{{root}}img/work-07.jpg" alt="{{w07}}" loading="lazy"></button>
+      <button><img src="{{root}}img/work-12.jpg" alt="{{w12}}" loading="lazy"></button>
+      <button><img src="{{root}}img/work-05.jpg" alt="{{w05}}" loading="lazy"></button>
+      <button><img src="{{root}}img/work-08.jpg" alt="{{w08}}" loading="lazy"></button>
+      <button><img src="{{root}}img/work-06.jpg" alt="{{w06}}" loading="lazy"></button>
+    </div>
+  </div>
+</section>
+
+<section id="artists" class="artists">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="eyebrow">{{artists_eyebrow}}</p>
+        <h2>{{artists_h2}}</h2>
+      </div>
+      <p>{{artists_p}}</p>
+    </div>
+    <ul class="names">
+{{artists}}
+    </ul>
+    <p class="note">{{artists_note}}</p>
+  </div>
+</section>
+
+<section id="abroad">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="eyebrow">{{abroad_eyebrow}}</p>
+        <h2>{{abroad_h2}}</h2>
+      </div>
+      <p>{{abroad_p}}</p>
+    </div>
+    <ul class="places">
+      <li>{{place1}}</li>
+      <li>{{place2}}</li>
+      <li>{{place3}}</li>
+    </ul>
+
+    <div class="shows">
+      <article class="show">
+        <img src="{{root}}img/venice-sarkissian-poster.jpg" alt="{{show1_alt}}" loading="lazy">
+        <div>
+          <h3>{{show1_name}}</h3>
+          <i lang="it">Alla ricerca del Paradiso</i>
+          <p>{{show1_p}}</p>
+          <p class="when">{{show1_when}}</p>
+        </div>
+      </article>
+      <article class="show">
+        <img src="{{root}}img/venice-avetissian-poster.jpg" alt="{{show2_alt}}" loading="lazy">
+        <div>
+          <h3>{{show2_name}}</h3>
+          <i lang="it">Alla mia maniera</i>
+          <p>{{show2_p}}</p>
+          <p class="when">{{show2_when}}</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="strip">
+      <figure>
+        <img src="{{root}}img/venice-install.jpg" alt="{{fig1_alt}}" loading="lazy">
+        <figcaption>{{fig1}}</figcaption>
+      </figure>
+      <figure>
+        <img src="{{root}}img/venice-hanging.jpg" alt="{{fig2_alt}}" loading="lazy">
+        <figcaption>{{fig2}}</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="visit" class="visit">
+  <div class="wrap">
+    <p class="eyebrow">{{visit_eyebrow}}</p>
+    <h2>{{visit_h2}}</h2>
+    <div class="info">
+      <div>
+        <h3>{{addr_h}}</h3>
+        <p>{{addr}}</p>
+        <small><a href="https://www.google.com/maps/search/?api=1&query=Antikyan+Gallery+Pushkin+33%2F21+Yerevan" target="_blank" rel="noopener">{{maps}}</a></small>
+      </div>
+      <div>
+        <h3>{{hours_h}}</h3>
+        <p>{{hours}}</p>
+        <small>{{hours_note}}</small>
+      </div>
+      <div>
+        <h3>{{contact_h}}</h3>
+        <p><a href="tel:+37491415734">+374 91 415 734</a><br>
+        <a href="https://www.instagram.com/antikyangallery" target="_blank" rel="noopener">@antikyangallery</a></p>
+        <small>{{director}}</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> {{footer_c}}</span>
+    <span>{{footer_art}}</span>
+  </div>
+</footer>
+
+<dialog id="lb" aria-label="{{lb_aria}}">
+  <button aria-label="{{close}}">×</button>
+  <img alt="">
+</dialog>
+
+<script>
+(function(){
+  var lb=document.getElementById('lb'), big=lb.querySelector('img');
+  document.getElementById('grid').addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b) return;
+    var i=b.querySelector('img'); big.src=i.src; big.alt=i.alt;
+    if(lb.showModal) lb.showModal();
+  });
+  lb.addEventListener('click',function(){ lb.close(); });
+  document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
